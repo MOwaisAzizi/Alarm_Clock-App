@@ -1,0 +1,85 @@
+.app {
+  height: 87%;
+  background-color: rgb(132, 5, 5);
+  color: white;
+  padding-top: 7rem;
+  font-size: 25px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.selectContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+select {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.save {
+  background-color: rgb(14, 228, 14);
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  color: inherit;
+  margin-left: 10px;
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.stop {
+  background-color: rgb(246, 25, 25);
+  padding: 10px;
+  border-radius: 20px;
+  color: inherit;
+  border: none;
+  margin-left: 10px;
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.save:hover {
+  background-color: rgb(9, 177, 9);
+  transition: 0.5s;
+}
+.stop:hover {
+  background-color: rgb(192, 15, 15);
+  transition: 0.5s;
+}
+.sound {
+  background-color: rgb(153, 246, 15);
+  color: white;
+  border-radius: 20px;
+  display: none;
+}
+h2 {
+  display: block;
+  text-align: center;
+}
+p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  select {
+    font-size: 16px;
+  }
+  .stop {
+    font-size: 16px;
+  }
+  .save {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+}
