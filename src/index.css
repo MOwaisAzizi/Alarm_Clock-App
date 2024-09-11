@@ -10,6 +10,10 @@ form {
   display: flex;
   justify-content: center;
   align-items: start;
+}h3{
+  text-align: center;
+  color: white;
+  font-size: 30px;
 }
 .selectContainer {
   display: flex;

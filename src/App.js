@@ -71,6 +71,7 @@ if(min==getMinut && hour==getHour && ischecked==true) console.log('equals');
 
   return (
     <div className='app'>
+    <h3>Alarm-Clock App</h3>
       <form>
         <div className='selectContainer'>
           <p>Hour</p>
