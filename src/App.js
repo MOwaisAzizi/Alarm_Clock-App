@@ -16,25 +16,33 @@ export default function App() {
   const [showMin, setShowMin] = useState(null)
   
   useEffect(function () {
-    let interval
+    // let interval
     
-    if(!isStopInterval){
-    date = new Date()
-    interval = setInterval(() => {
+    // if(!isStopInterval){
+      // console.log(date);
+      
+      let interval = setInterval(() => {
+      date = new Date()
       setGetHour(date.getHours())
       setGetMinut(date.getMinutes())
+
+      if(min==getMinut && hour==getHour && ischecked==true){
+        clearInterval(interval)
+        console.log('deleteing ');
+        
+      }
   }, 1000)
-}
- return ()=> clearInterval
-  }, [isStopInterval])
+// }
+//  return ()=> clearInterval
+  }, [])
 
 
   function hourHandler(e) {
-    setHour(e.target.value)
+    setHour(Number(e.target.value))
   }
 
   function minHandler(e) {
-    setMin(e.target.value)
+    setMin(Number(e.target.value))
   }
 
   function showTimeHandler(e) {
@@ -55,6 +63,11 @@ export default function App() {
     setShowMin('')
     setIsStopInterval(true)
   }
+console.log(min,getMinut,hour,getHour,ischecked);
+
+if(min==getMinut && hour==getHour && ischecked==true) console.log('equals');
+
+
 
   return (
     <div className='app'>
